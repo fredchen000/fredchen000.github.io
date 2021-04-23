@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.backgrounds{
+  position: absolute;
+  background-color: rgb(12,12,12);
+  text-align: center;
+  top:0;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  @include centerAlign;
+}

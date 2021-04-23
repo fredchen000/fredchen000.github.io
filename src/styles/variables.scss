@@ -13,6 +13,12 @@ $almost-white: #FAFAFA;
 
 $ease-out: cubic-bezier(0.2,0.7,0.5,1);
 
+@mixin centerAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @font-face {
   font-family: 'iconfont';  /* project id 667888 */
   src: url('//at.alicdn.com/t/font_667888_ab4mg39uw35.eot');

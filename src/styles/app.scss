@@ -1,16 +1,12 @@
 /* global styles */
 @import './normalize.scss';
-
+@import "~bootstrap/scss/bootstrap";
 @import './variables.scss';
 @import './links';
 
 html, body {
   overflow-x: hidden;
   overflow-y: auto;
-}
-
-* {
-  -webkit-tap-highlight-color: transparent;
 }
 
 ul, ol {
@@ -80,7 +76,8 @@ html {
 body {
   height: 100%;
   margin: 0;
-  font-family: "Microsoft Yahei", sans-serif;
+  // font-family: "Microsoft Yahei", sans-serif;
+  font-size: 16px;
   font-weight: normal;
 }
 

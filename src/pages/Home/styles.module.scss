@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+.home{
+  top:0;
+  height: 100vh;
+  overflow: hidden;
+  .frontPage{
+    position: relative;
+    height: 90vh;
+    color:white;
+    @include centerAlign;
+    flex-direction: column;
+    .name{
+      font-size: calc(24px + 5vw);
+    }
+    .motto{
+      font-size: calc(8px + 2vw);
+    }
+  }
+}
