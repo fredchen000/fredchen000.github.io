@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
 import './styles.module.scss';
-import _ from 'lodash';
+import Navigator from '@components/Navigator';
 
 function Contact(props) {
   const [temp, setTemp] = useState(0);
@@ -17,7 +18,12 @@ function Contact(props) {
   }, []);
 
   return (
-    <div styleName="temp">
+    <div styleName="contact">
+      <Navigator
+        bgColor="light"
+        variant="light"
+        textColor="text-secondary"
+      />
       Contact
     </div>
   );

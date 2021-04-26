@@ -17,7 +17,7 @@ function About(props) {
   }, []);
 
   return (
-    <div styleName="temp">
+    <div id="about" styleName="temp">
       Template
     </div>
   );

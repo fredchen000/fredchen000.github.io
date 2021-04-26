@@ -5,9 +5,8 @@ import Starfield from '@components/Starfield';
 
 function Home() {
   return (
-    <div styleName="home">
+    <div id="home" styleName="home">
       <Starfield />
-      <Navigator />
       <div styleName="frontPage">
         <div styleName="name">Fred Chen</div>
         <blockquote className="blockquote text-center">
