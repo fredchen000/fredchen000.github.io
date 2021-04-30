@@ -1,14 +1,15 @@
 .navBody{
   transition: all .3s ease-out;
+  min-height: 80px;
   .brand{
-    font-size: 24px;
+    font-size: 1.5em;
   }
   .toggler{
     border-color: rgba(255,255,255,0.5);
   }
   .collapse{
     .link{
-      font-size: 20px;
+      font-size: 1.2em;
     }
   }
 }

@@ -1,2 +1,104 @@
-.temp{
+@import "../../styles/variables.scss";
+.blogs{
+  width: 100vw;
+  padding: 40px;
+  min-height: calc(100vh - 80px);
+  background-color: $white-blue;
+  @include centerAlign;
+  flex-direction: column;
+  .titleWrapper{
+    @include centerAlign;
+    flex-direction: column;
+    width: 100%;
+    .title{
+      text-align: center;
+      font-size: 2.5em;
+      font-family: "Source Serif Pro", serif;
+      margin-bottom: 15px;
+    }
+    .line{
+      border-top: solid 3px $primary-dark-blue;;
+      width: 5em;
+    }
+  }
+  .posts{
+    @include centerAlign;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 90vw;
+    min-height: 60vh;
+    margin: 30px;
+    @media all and (max-width:992px){
+      flex-direction: column;
+      align-items: center;
+    }
+    .post{
+      overflow: hidden;
+      min-height: 47vh;
+      max-width: 20vw;
+      margin: 20px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      cursor: pointer;
+      transition: all .2s;
+      @media all and (max-width:992px){
+        height: auto;
+        min-width: 60vw;
+        margin: 20px;
+      }
+      &:active{
+        box-shadow: none;
+      }
+      &:hover{
+        transform: translate(0, -20px);
+        @media all and (max-width:992px){
+          transform: none;
+        }
+      }
+      .image{
+        min-height: 20vh;
+        width: 100%;
+        background-color: black;
+      }
+      .detail{
+        width: 100%;
+        padding: 20px;
+        font-family: "Source Serif Pro", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 0.9em;
+        .topContent{
+          .title{
+            font-size: 1.2em;
+          }
+          .description{
+            color: $text-color;
+          }
+        }
+        .bottomContent{
+          margin-top: 1em;
+          .author{
+              .icon{
+                font-family: 'iconfont';
+                font-size: 1.2em;
+                margin-right: 8px;
+              }
+          }
+          .date{
+            .icon{
+              font-family: 'iconfont';
+              font-size: 1.2em;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .more{
+    border-color: $light-gray;
+  }
 }

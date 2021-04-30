@@ -1,14 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import { scroller } from "react-scroll";
 import PropTypes from 'prop-types';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import './styles.module.scss';
+import { navs_config } from "@info/info";
 import _ from 'lodash';
 
 function Navigator(props) {
   const navbarRef = useRef();
+  const [expanded, setExpanded] = useState(false);
   const [navbarStatus, setNavbarStatus] = useState(false);
 
   useEffect(()=>{
@@ -27,34 +31,39 @@ function Navigator(props) {
     };
   },[navbarStatus]);
 
-  const navs_config = [
-    "About",
-    "Blogs",
-    "Projects",
-    "Contact"
-  ];
+  const linkOnclick = (e, offset, id) => {
+    setExpanded(false);
+    scroller.scrollTo(id, {
+      smooth: true,
+      offset: offset,
+      duration: 500,
+    });
+  };
 
   return (
     <Navbar
+      collapseOnSelect
       bg={navbarStatus ? props.bgColor : props.initBgColor}
       ref={navbarRef}
       className="py-3 fixed-top"
       styleName="navBody"
       variant={navbarStatus? props.variant : props.initVariant}
       expand="lg"
+      expanded={expanded}
     >
-      <HashLink
-        smooth
+      <Navbar.Brand
+        href="#home"
         styleName="brand"
-        className="navbar-brand  brand"
-        to="/#home"
+        className="navbar-brand brand"
+        onClick={(e) => linkOnclick(e, 0, "home")}
       >
         {`<Home />`}
-      </HashLink>
+      </Navbar.Brand>
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
         className="navbar-inverse text-light"
         styleName="toggler"
+        onClick={() => setExpanded(expanded ? false : "expanded")}
       />
       <Navbar.Collapse
         id="basic-navbar-nav"
@@ -63,13 +72,15 @@ function Navigator(props) {
         <Nav className="mr-auto">
           {_.map(navs_config, (item, index)=>{
             return(
-              <HashLink
-                smooth
+              <Link
+                to={`#${item.toLowerCase()}`}
                 key={index}
                 styleName="link"
                 className={`nav-link ${navbarStatus? props.textColor : props.initTextColor}`}
-                to={`/#${item.toLowerCase()}`}
-              >{item}</HashLink>
+                onClick={(e) => linkOnclick(e, -80, item.toLowerCase())}
+              >
+                {item}
+              </Link>
             );
           })}
         </Nav>

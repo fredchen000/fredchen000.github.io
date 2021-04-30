@@ -69,6 +69,7 @@
     "react-refresh": "^0.8.3",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.0",
+    "react-scroll": "^1.8.2",
     "react-sizeme": "^3.0.1",
     "react-transition-group": "^4.4.1",
     "resolve": "1.18.1",
@@ -206,7 +207,8 @@
             "@pages": "./src/pages",
             "@components": "./src/components",
             "@styles": "./src/styles",
-            "@src": "./src"
+            "@src": "./src",
+            "@info": "./src/info"
           }
         }
       ]

@@ -5,6 +5,7 @@
 @import './links';
 
 html, body {
+
 }
 
 ul, ol {
@@ -74,8 +75,11 @@ html {
 body {
   height: 100%;
   margin: 0;
-  // font-family: "Microsoft Yahei", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 16px;
+  @media all and (max-width:992px){
+    font-size: 14px;
+  }
   font-weight: normal;
 }
 
@@ -88,7 +92,7 @@ div {
 
 p {
   margin: 0;
-  font-size: 16px;
+  // font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {

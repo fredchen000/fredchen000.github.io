@@ -1,4 +1,141 @@
-.temp{
-  height: 100vh;
+@import "../../styles/variables.scss";
+.about{
   width: 100vw;
+  @include centerAlign;
+  justify-content: flex-start;
+  align-items: normal;
+  .leftPanel{
+    padding: 20px 30px;
+    min-height: calc(100vh - 80px);
+    background: linear-gradient(to bottom, $white-blue, white);
+    // background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+    max-width: 21vw;
+    @media all and (max-width:992px){
+        display: none;
+    }
+    .contact{
+      height: 50px;
+      line-height: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: solid $primary-dark-blue;
+    }
+    .name{
+      font-size: 20px;
+      margin-top: 24px;
+    }
+    .title{
+      font-size: 16px;
+      font-style: italic;
+      color: $text-color;
+      margin-bottom: 24px;
+    }
+    .card{
+      margin: 12px 0;
+      @include centerAlign;
+      justify-content: flex-start;
+      font-size: 14px;
+      border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+      cursor: pointer;
+      .icon{
+        font-family: "iconfont";
+        font-size: 24px;
+        margin-right: 10px;
+        color: $primary-dark-blue;
+      }
+      .target{
+        word-break: break-all;
+        color: $text-color;
+      }
+    }
+  }
+  .rightPanel{
+    position: relative;
+    padding: 60px;
+    min-height: calc(100vh - 80px);
+    width: 80vw;
+    background-color: white;
+    @media all and (max-width:992px){
+        width: 100vw;
+        padding: 50px 20px;
+    }
+    .intro{
+      @include centerAlign;
+      justify-content: space-between;
+      align-items: stretch;
+      min-height: 30vh;
+      width: 95%;
+      @media all and (max-width:992px){
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .content{
+        width: 60%;
+        @media all and (max-width:992px){
+            width: 95vw;
+            padding: 50px 20px;
+        }
+        .title{
+          height: 1.2em;
+          padding-left: 12px;
+          line-height: 1.2em;
+          font-size: 2em;
+          font-family: "Source Serif Pro", serif;
+          border-left: solid $primary-dark-blue;
+        }
+        .aboutMe{
+          padding:12px;
+          color: $text-color;
+        }
+      }
+      .photo{
+        width: 30%;
+        background-color: green;
+        @media all and (max-width:992px){
+          width: 50vw;
+          height: 50vw;
+
+        }
+      }
+    }
+    .experience{
+      margin-top: 50px;
+      width: 95%;
+      .title{
+        height: 1.2em;
+        padding-left: 12px;
+        line-height: 1.2em;
+        font-size: 2em;
+        font-family: "Source Serif Pro", serif;
+        border-left: solid $primary-dark-blue;
+      }
+      .listCard{
+        margin-top: 12px;
+        padding:12px;
+        .program{
+          @include centerAlign;
+          justify-content: space-between;
+          font-size: 1.3em;
+          font-family: "Source Serif Pro", serif;
+        }
+        .detail{
+          @include centerAlign;
+          color: $text-color;
+          justify-content: space-between;
+          font-weight: 400;
+          .name{
+          }
+          .date{
+            font-style: italic;
+            font-weight: 300;
+          }
+        }
+        .awards{
+          color: $text-color;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }

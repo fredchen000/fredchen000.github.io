@@ -1,2 +1,81 @@
-.temp{
+@import "../../styles/variables.scss";
+.projects{
+  min-height: calc(100vh - 80px);
+  width: 100vw;
+  padding: 40px;
+  @include centerAlign;
+  flex-direction: column;
+
+  .titleWrapper{
+    @include centerAlign;
+    flex-direction: column;
+    width: 100%;
+    .title{
+      text-align: center;
+      font-size: 2.5em;
+      font-family: "Source Serif Pro", serif;
+      margin-bottom: 15px;
+    }
+    .line{
+      border-top: solid 3px $primary-dark-blue;
+      width: 5em;
+    }
+  }
+
+  .projectWrapper{
+    @include centerAlign;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    margin-top: 20px;
+    width: 90vw;
+    .project{
+      width: 35%;
+      height: 25vh;
+      border-radius: 6px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 20px;
+      font-family: "Roboto Slab", sans-serif;
+      margin: 20px 0px;
+      @media all and (max-width:992px){
+          width: 90%;
+      }
+      .name{
+        color: $primary-blue;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 1.1em;
+        .icon{
+          font-family: "iconfont" !important;
+          font-size: 1.2em;
+          color: $light-gray;
+          margin-right: 12px;
+        }
+      }
+      .description{
+        font-size: 0.9em;
+        color: $text-color;
+      }
+      .info{
+        color: $text-color;
+        margin-top: 20px;
+        font-family: "iconfont" !important;
+        display: flex;
+        align-items: center;
+        font-size: 1.1em;
+        .star{
+          margin-right: 5px;
+        }
+        .fork{
+          margin: 0 2px 0 25px;
+        }
+      }
+    }
+  }
+  .more{
+    margin-top: 20px;
+    border-color: $light-gray;
+  }
 }
