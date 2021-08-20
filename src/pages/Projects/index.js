@@ -44,7 +44,12 @@ function Projects(props) {
             <div styleName="project" key={index}>
               <div styleName="name">
                 <span styleName="icon">&#xe638;</span>
-                <a styleName="content">{item.full_name}</a>
+                <a
+                  styleName="content"
+                  href={`https://github.com/${item.full_name}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >{item.full_name}</a>
               </div>
               <div styleName="description">
                 {item.description}
