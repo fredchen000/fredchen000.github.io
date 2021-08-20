@@ -5,8 +5,10 @@ import './styles.module.scss';
 import Navigator from '@components/Navigator';
 import Home from '@pages/Home';
 import About from '@pages/About';
-import Blogs from '@pages/Blogs';
+import Demos from '@pages/Demos';
 import Projects from '@pages/Projects';
+import Footer from '@components/Footer';
+import ScrollToAnchor from '@components/ScrollToAnchor';
 
 function App() {
   return (
@@ -21,8 +23,9 @@ function App() {
       />
       <Home />
       <About />
-      <Blogs />
+      <Demos />
       <Projects />
+      <Footer />
       {/*_.map(routes, (item, index) =>
         <Route exact path={index}>
           {item}

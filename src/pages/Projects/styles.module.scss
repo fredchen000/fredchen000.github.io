@@ -2,7 +2,7 @@
 .projects{
   min-height: calc(100vh - 80px);
   width: 100vw;
-  padding: 40px;
+  padding: 40px;;
   @include centerAlign;
   flex-direction: column;
 
@@ -24,7 +24,7 @@
 
   .projectWrapper{
     @include centerAlign;
-    justify-content: space-around;
+    justify-content: normal;
     flex-wrap: wrap;
     min-height: 60vh;
     margin-top: 20px;
@@ -36,7 +36,7 @@
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       padding: 20px;
       font-family: "Roboto Slab", sans-serif;
-      margin: 20px 0px;
+      margin: 20px 7.5%;
       @media all and (max-width:992px){
           width: 90%;
       }
@@ -47,6 +47,7 @@
         cursor: pointer;
         font-weight: 400;
         font-size: 1.1em;
+        word-break: break-all;
         .icon{
           font-family: "iconfont" !important;
           font-size: 1.2em;
@@ -75,7 +76,11 @@
     }
   }
   .more{
-    margin-top: 20px;
+    margin: 20px 0px;
     border-color: $light-gray;
+  }
+  .more:focus{
+    outline: none;
+    box-shadow: none;
   }
 }

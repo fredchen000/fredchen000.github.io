@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+.footer{
+  width: 100vw;
+  background-color: $white-blue;
+  @include centerAlign;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 40px;
+  min-height: 30vh;
+  .decorator{
+    position: absolute;
+    width: 3em;
+    height: 3em;
+    background-color: $primary-dark-blue;
+    opacity: 0.8;
+    border-radius: 1.5em;
+    top: -1.5em;
+  }
+  .welcome{
+    font-size: 2em;
+  }
+  .more{
+    margin-top: 20px;
+    text-align: center;
+    .email{
+      color: $primary-blue;
+    }
+  }
+  .designed{
+    position: absolute;
+    bottom: 20px;
+    color: $text-color;
+    font-size: 0.8em;
+    .source{
+      color: $primary-blue;
+    }
+  }
+}

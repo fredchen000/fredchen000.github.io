@@ -7,7 +7,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import './styles.module.scss';
-import { navs_config } from "@info/info";
+import { personal_info, navs_config } from "@info/info";
+import Pdf from '../../info/FredChenCV.pdf';
 import _ from 'lodash';
 
 function Navigator(props) {
@@ -71,17 +72,32 @@ function Navigator(props) {
       >
         <Nav className="mr-auto">
           {_.map(navs_config, (item, index)=>{
-            return(
-              <Link
-                to={`#${item.toLowerCase()}`}
-                key={index}
-                styleName="link"
-                className={`nav-link ${navbarStatus? props.textColor : props.initTextColor}`}
-                onClick={(e) => linkOnclick(e, -80, item.toLowerCase())}
-              >
-                {item}
-              </Link>
-            );
+            if(item === "Resume"){
+              return(
+                <a
+                  key={index}
+                  styleName="link"
+                  className={`nav-link ${navbarStatus? props.textColor : props.initTextColor}`}
+                  href={personal_info.cv}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {item}
+                </a>
+              );
+            }
+            else
+              return(
+                <Link
+                  to={`#${item.toLowerCase()}`}
+                  key={index}
+                  styleName="link"
+                  className={`nav-link ${navbarStatus? props.textColor : props.initTextColor}`}
+                  onClick={(e) => linkOnclick(e, -80, item.toLowerCase())}
+                >
+                  {item}
+                </Link>
+              );
           })}
         </Nav>
       </Navbar.Collapse>

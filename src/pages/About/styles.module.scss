@@ -64,7 +64,7 @@
       justify-content: space-between;
       align-items: stretch;
       min-height: 30vh;
-      width: 95%;
+      width: 100%;
       @media all and (max-width:992px){
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -73,8 +73,8 @@
       .content{
         width: 60%;
         @media all and (max-width:992px){
-            width: 95vw;
-            padding: 50px 20px;
+            width: 100%;
+            margin-top: 50px;
         }
         .title{
           height: 1.2em;
@@ -91,17 +91,18 @@
       }
       .photo{
         width: 30%;
-        background-color: green;
+        height: auto;
+        object-fit: contain;
         @media all and (max-width:992px){
-          width: 50vw;
-          height: 50vw;
+          width: 60vw;
+          height: 50vh;
 
         }
       }
     }
     .experience{
       margin-top: 50px;
-      width: 95%;
+      width: 100%;
       .title{
         height: 1.2em;
         padding-left: 12px;
@@ -124,6 +125,7 @@
           color: $text-color;
           justify-content: space-between;
           font-weight: 400;
+          font-size: 0.9em;
           .name{
           }
           .date{

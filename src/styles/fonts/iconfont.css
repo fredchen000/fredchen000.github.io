@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 1333053 */
+  src: url('iconfont.woff2?t=1629492551385') format('woff2'),
+       url('iconfont.woff?t=1629492551385') format('woff'),
+       url('iconfont.ttf?t=1629492551385') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon34wujiaoxingpingfenshixin:before {
+  content: "\e664";
+}
+
+.iconfork:before {
+  content: "\e625";
+}
+
+.iconrepo1:before {
+  content: "\e638";
+}
+
+.iconuser:before {
+  content: "\e606";
+}
+
+.iconcalendar:before {
+  content: "\e835";
+}
+
+.iconphone:before {
+  content: "\e7b8";
+}
+
+.iconfile:before {
+  content: "\e729";
+}
+
+.icongithub:before {
+  content: "\e7ab";
+}
+
+.iconmail:before {
+  content: "\e7b7";
+}
+
+.iconlinkedin:before {
+  content: "\ebf6";
+}
+
+.iconcircle:before {
+  content: "\e648";
+}
+
+.icongraph_fall:before {
+  content: "\e65d";
+}
+
+.icongraph_rise:before {
+  content: "\e65f";
+}
+
+.iconfl-jia:before {
+  content: "\e624";
+}
+
+.iconmenu:before {
+  content: "\e6c0";
+}
+
+.iconchazuo:before {
+  content: "\e623";
+}
+

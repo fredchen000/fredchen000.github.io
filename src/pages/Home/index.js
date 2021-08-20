@@ -13,12 +13,12 @@ function Home() {
       <Starfield />
       <div styleName="frontPage">
         <div styleName="name">Fred Chen</div>
-        <p styleName="motto">I come, I see, I ... CODE!</p>
+        <p styleName="motto">I come, I see, I CODE!</p>
         <div styleName="contacts">
           {_.map(info_icon_config, (item, index) =>{
             if(info_used.includes(item.key)){
               return(
-                <div styleName="icon">
+                <div styleName="icon" key={index}>
                   <a
                     href={item.href}
                     target="_blank"

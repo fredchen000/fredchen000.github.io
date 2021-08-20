@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
+import _ from 'lodash';
 
 import InfoCard from './InfoCard';
 import ListCard from './ListCard';
-import './styles.module.scss';
+import Selfie from '@info/images/selfie.jpeg';
 import {personal_info, about_me, education_info, work_info, info_icon_config} from '@info/info';
-import _ from 'lodash';
+
+import './styles.module.scss';
 
 function About() {
   const [temp, setTemp] = useState(0);
@@ -22,6 +24,7 @@ function About() {
           if(item.href!='') linked = true;
           return(
             <InfoCard
+              key={index}
               icon={item.icon}
               target={item.display}
               linked={linked}
@@ -38,13 +41,14 @@ function About() {
               {about_me}
             </div>
           </div>
-          <div styleName="photo"></div>
+          <img styleName="photo" src={Selfie}/>
         </div>
         <div styleName="experience">
           <div styleName="title">Education</div>
           {_.map(education_info, (item, index) =>{
             return(
               <ListCard
+                key={index}
                 name={item.name}
                 title={item.title}
                 date={item.date}
@@ -58,6 +62,7 @@ function About() {
           {_.map(work_info, (item, index) =>{
             return(
               <ListCard
+                key={index}
                 name={item.name}
                 title={item.title}
                 date={item.date}
