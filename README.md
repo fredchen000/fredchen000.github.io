@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Fred's Personal Website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# How I Create this Website from Scratch
+- Create React App
+Official Website: https://create-react-app.dev/
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+npm v.s. npx: https://medium.com/itsems-frontend/whats-npx-e83400efe7f8
 
-In the project directory, you can run:
+p.s. Using [Atom](https://atom.io/) as text editor
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ESLint & Prettier
+---
+https://create-react-app.dev/docs/setting-up-your-editor/
+Reason: To ensure same coding patterns.
+- ESLint `npm install eslint --save-dev` & `npm install eslint-plugin-react --save-dev`
+    - Make sure the editor has eslint plugin installed(ex:linter-eslint in Atom)
+    - `eslint --init` to set your style (it will create eslint configuration file in your project)
+- Prettier `npm install --save husky lint-staged prettier`
+    - husky makes it possible to use githooks as if they are npm scripts.
+    - lint-staged allows us to run scripts on staged files in git. See this blog post about lint-staged to learn more about it.
+    - prettier is the JavaScript formatter we will run before commits.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lodash
+---
+Reason: Easier to maintain JavaScript Codes and working flow.
+- Lodash Installation `npm i --save lodash`
+- Lodash Documents: https://lodash.com/docs/
 
-### `yarn test`
+SCSS
+---
+Reason for SCSS not CSS-in-JS: I prefer coding CSS and JS seperately
+- installation `npm i --save node-sass`
+- Recommend Reading(Chinese): [SCSS進階使用](https://medium.com/d-d-mag/%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84-sass-%E6%8A%80%E5%B7%A7-c97d4d5e0fc4)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CSS-Modules (babel-plugin-react-css-modules)
+---
+Reason: Easy to deal with component style so that specific css are working only to the specific components (write local css)
 
-### `yarn build`
+CSS-Modules is already installed in create-react-app, but since I prefer writing className in strings rather than writing like this `className={style.title}`, I decided to install babel-plugin-react-css-modules so that styleName can be used when adding css styles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Installation: see [Guide 1](https://blog.esunr.xyz/2020/04/%E5%9C%A8React%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%9B%B4%E5%A5%BD%E7%9A%84CSS-Modules/#2-2-%E4%BF%AE%E6%94%B9-babel-%E9%85%8D%E7%BD%AE) and [Guide 2](https://daihaoxin.github.io/post/bb9071c9.html)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+For Example
+code:
+![code ><](https://i.imgur.com/yfMFBPF.png =400x)
+result:
+![elements ><](https://i.imgur.com/fCvyH4q.png =400x)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+All classes are unique since they are hashed in this way`[local]__[name]__[hash:base64:5]`
 
-### `yarn eject`
+p.s. Hash may not work, please follow this issue to solve the problem. [Issue Link](https://github.com/gajus/babel-plugin-react-css-modules/issues/291)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Resolver (babel-plugin-module-resolver)
+---
+Reason: Easier to handle path and directories.
+- Installation: see [Document](https://www.npmjs.com/package/babel-plugin-module-resolver)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Router(react-router-dom)
+---
+Reason: Support routing in different pages
+- Installation: see [Document](https://reactrouter.com/web/api/HashRouter)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+React-Bootstrap
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Installation and Doc: see [Document](https://react-bootstrap.github.io/)
 
-## Learn More
+React-Router-Hash-Link
+---
+npm install --save react-router-hash-link
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Iconfont map issue
+---
+Turn "\&#xe7ab;" to "\ue7ab"
 
-### Code Splitting
+Font
+---
+Robo Slab
+https://fonts.google.com/specimen/Roboto+Slab?category=Serif
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Packages
+---
+1. [react-starfield-animation](https://github.com/transitive-bullshit/react-starfield-animation)
+2. Header -- [react-bootstrap](https://react-bootstrap.github.io/)

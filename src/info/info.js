@@ -23,7 +23,7 @@ const personal_info = {
   linkedin: 'https://www.linkedin.com/in/liang-yu-chen-fred',
   github: 'https://github.com/fredchen000',
   cv: CV,
-  opensource: '',
+  opensource: 'https://github.com/fredchen000/fredchen000.github.io',
 };
 
 const about_me = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lorem, hendrerit in ex et, facilisis consectetur urna. Duis semper tellus in scelerisque porttitor. Proin fringilla aliquam elit eget cursus. Ut auctor arcu dolor, sed vehicula massa pretium sed. Suspendisse vehicula libero eget finibus volutpat. Curabitur ut consectetur enim. Proin sagittis faucibus risus, non congue mi tincidunt dictum. Nullam sollicitudin tortor in magna blandit, nec posuere lectus condimentum. Mauris id sodales ante. Aliquam nec feugiat ligula. Quisque in semper est, non facilisis sem. Fusce scelerisque, eros eget laoreet accumsan, massa velit mattis tellus, sit amet semper magna felis eget quam.';
