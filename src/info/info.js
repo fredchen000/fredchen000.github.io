@@ -26,7 +26,7 @@ const personal_info = {
   opensource: 'https://github.com/fredchen000/fredchen000.github.io',
 };
 
-const about_me = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lorem, hendrerit in ex et, facilisis consectetur urna. Duis semper tellus in scelerisque porttitor. Proin fringilla aliquam elit eget cursus. Ut auctor arcu dolor, sed vehicula massa pretium sed. Suspendisse vehicula libero eget finibus volutpat. Curabitur ut consectetur enim. Proin sagittis faucibus risus, non congue mi tincidunt dictum. Nullam sollicitudin tortor in magna blandit, nec posuere lectus condimentum. Mauris id sodales ante. Aliquam nec feugiat ligula. Quisque in semper est, non facilisis sem. Fusce scelerisque, eros eget laoreet accumsan, massa velit mattis tellus, sit amet semper magna felis eget quam.';
+const about_me = "Hi, I\u2019m Fred, aka \u201CTaipei Tree Frog\u201D. I am from Taiwan, and I completed my Bachelor's degree in Computer Science at HKUST. Currently, I am a graduate student at Purdue University pursuing my MSCS degree. My specialties and interests range from full-stack development, UI/UX design, cloud computing and data engineering. I\u2019m passionate about building real-world applications. Being a software developer, I can easily make the world better by making things that are useful to other people. It\u2019s always a great accomplishment to see other people using the product that has my code in it. If you\u2019d like to get in touch, feel free to contact me at any time :)";
 
 const education_info = [
   {
