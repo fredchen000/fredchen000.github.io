@@ -1,5 +1,5 @@
 # Fred's Personal Website
-View the website: https://fredchen000.github.io/build
+View the website: [Link](https://fredchen000.github.io/build/)
 
 
 # How I Create this Website from Scratch
