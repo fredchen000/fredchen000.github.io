@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.d1c0f187.chunk.css",
-    "main.js": "./static/js/main.ea4babc7.chunk.js",
-    "main.js.map": "./static/js/main.ea4babc7.chunk.js.map",
+    "main.js": "./static/js/main.465f26c5.chunk.js",
+    "main.js.map": "./static/js/main.465f26c5.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.0cbbe0f5.js",
     "runtime-main.js.map": "./static/js/runtime-main.0cbbe0f5.js.map",
     "static/js/2.cca8e0b6.chunk.js": "./static/js/2.cca8e0b6.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "./index.html",
     "static/css/main.d1c0f187.chunk.css.map": "./static/css/main.d1c0f187.chunk.css.map",
     "static/js/2.cca8e0b6.chunk.js.LICENSE.txt": "./static/js/2.cca8e0b6.chunk.js.LICENSE.txt",
-    "static/media/FredChenCV.4250f6a0.pdf": "./static/media/FredChenCV.4250f6a0.pdf",
+    "static/media/FredChenCV.8a3998d5.pdf": "./static/media/FredChenCV.8a3998d5.pdf",
     "static/media/art-display.f95345b4.png": "./static/media/art-display.f95345b4.png",
     "static/media/d-engraver.7bd57648.png": "./static/media/d-engraver.7bd57648.png",
     "static/media/styles.module.scss": "./static/media/iconfont.f4cf9b50.woff2",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.0cbbe0f5.js",
     "static/js/2.cca8e0b6.chunk.js",
     "static/css/main.d1c0f187.chunk.css",
-    "static/js/main.ea4babc7.chunk.js"
+    "static/js/main.465f26c5.chunk.js"
   ]
 }
