@@ -17,7 +17,7 @@ import CV from '@info/FredChenCV.pdf';
 const personal_info = {
   name: 'Liang-Yu, Chen',
   prefered_name: 'Fred',
-  phone: '(765)746-9491',
+  phone: '(765)637-8941',
   address: '2419 Neil Armstrong Dr. #1A, West Lafayette, IN. 47906.',
   email: 'lchenbm000work@gmail.com',
   linkedin: 'https://www.linkedin.com/in/liang-yu-chen-fred',
