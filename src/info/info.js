@@ -10,6 +10,7 @@ const username = 'fredchen000';
 const repos = [
   'COMP4462_2020Final_Project',
   'fredchen000.github.io',
+  'fyp_stock_prediction',
 ];
 
 // Personal info config
