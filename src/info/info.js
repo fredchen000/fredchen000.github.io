@@ -107,7 +107,7 @@ const info_icon_config = {
   },
   phone: {
     key: 'phone',
-    display: '(765)746-9491',
+    display: '(765)637-8941',
     icon: '\ue7b8',
     href: ''
   },
